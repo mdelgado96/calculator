@@ -1,19 +1,43 @@
-/* This is an example CSS file, feel free to remove/edit it anytime */
-.footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 10px;
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-.footer a {
-  font-size: 14px;
-  font-weight: bold;
-  text-decoration: none;
+html,
+body {
+  height: 100%;
+  background-color: rgb(92, 125, 215);
 }
 
-.footer span {
-  font-size: 14px;
+body {
+  padding: 40px 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: block;
+}
+
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 75px);
+  grid-template-rows: 50px repeat(5, 60px) 60px;
+  gap: 10px;
+}
+
+.num_pad {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
 }
