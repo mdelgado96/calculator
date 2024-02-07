@@ -37,6 +37,11 @@ main {
   box-shadow: 5px 10px 18px #bcbcbc;
 }
 
+.Imedium {
+  font-family: Inter-Medium;
+  font-size: 21px;
+}
+
 .top_section {
   background-color: rgb(235, 235, 235);
   border-radius: 15px;
