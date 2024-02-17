@@ -63,14 +63,25 @@ button {
 
 .light_dark {
   display: flex;
+  border-radius: 20px;
+  padding: 5px 10px;
+  background-color: #e0e0e0;
 }
 
 .dark {
   padding-right: 5px;
+  border-right: 5px;
+  border-color: black;
+}
+
+.line {
+  width: 5px;
+  color: black;
 }
 
 .light {
   padding-left: 5px;
+  border-left: black;
 }
 
 .num_screen {
