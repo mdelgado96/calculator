@@ -13,15 +13,14 @@
         <div class="title">
           <div>Calc</div>
           <div>
-            <button class="light_dark shadow">
-              <div class="dark">
+            <div class="light_dark shadow">
+              <div class="dark" onclick="toggleDark()">
                 <img src="assets/icons/dark-mode-icon.svg" alt="dark-mode" />
               </div>
-              <div class="line"></div>
-              <div class="light">
+              <div class="light" onclick="toggleLight()">
                 <img src="assets/icons/light-mode-icon.svg" alt="light-mode" />
               </div>
-            </button>
+            </div>
           </div>
         </div>
 
@@ -35,73 +34,73 @@
 
       <div class="grid">
         <!-- num pad -->
-        <button id="1" class="num_pad all_clear shadow">
+        <button id="1" class="num_pad all_clear">
           <div class="Imedium blue">AC</div>
         </button>
-        <button id="2" class="num_pad clear shadow">
+        <button id="2" class="num_pad clear">
           <div class="Imedium blue">C</div>
         </button>
-        <button id="3" class="num_pad percent shadow">
-          <div class="Imedium">
-            <img src="assets/icons/percent-icon.svg" class="blue" alt="" />%
+        <button id="3" class="num_pad percent">
+          <div class="Imedium blue">
+            <img src="assets/icons/percent-icon.svg" class="blue" alt="" />
           </div>
         </button>
-        <button id="4" class="num_pad divide shadow">
+        <button id="4" class="num_pad divide">
           <div class="Imedium red">
-            <img src="assets/icons/division-icon.svg" alt="" />/
+            <img src="assets/icons/division-icon.svg" alt="" />
           </div>
         </button>
-        <button id="5" onclick="entered(7)" class="num_pad seven shadow">
+        <button id="5" onclick="entered(7)" class="num_pad seven">
           <div class="Imedium">7</div>
         </button>
-        <button id="6" onclick="entered('8')" class="num_pad eight shadow">
+        <button id="6" onclick="entered('8')" class="num_pad eight">
           <div class="Imedium">8</div>
         </button>
-        <button id="7" onclick="entered('9')" class="num_pad nine shadow">
+        <button id="7" onclick="entered('9')" class="num_pad nine">
           <div class="Imedium">9</div>
         </button>
-        <button id="8" class="num_pad multiply shadow">
+        <button id="8" class="num_pad multiply">
           <div class="Imedium red">
-            <img src="assets/icons/multiplication-icon.svg" alt="" />*
+            <img src="assets/icons/multiplication-icon.svg" alt="" />
           </div>
         </button>
-        <button id="9" onclick="entered('4')" class="num_pad four shadow">
+        <button id="9" onclick="entered('4')" class="num_pad four">
           <div class="Imedium">4</div>
         </button>
-        <button id="10" onclick="entered('5')" class="num_pad five shadow">
+        <button id="10" onclick="entered('5')" class="num_pad five">
           <div class="Imedium">5</div>
         </button>
-        <button id="11" onclick="entered('6')" class="num_pad six shadow">
+        <button id="11" onclick="entered('6')" class="num_pad six">
           <div class="Imedium">6</div>
         </button>
-        <button id="12" class="num_pad minus shadow">
+        <button id="12" class="num_pad minus">
           <div class="Imedium red">
-            <img src="assets/icons/subtraction-icon.svg" alt="" />-
+            <img src="assets/icons/subtraction-icon.svg" alt="" />
           </div>
         </button>
-        <button id="13" onclick="entered('1')" class="num_pad one shadow">
+        <button id="13" onclick="entered('1')" class="num_pad one">
           <div class="Imedium">1</div>
         </button>
-        <button id="14" onclick="entered('2')" class="num_pad two shadow">
+        <button id="14" onclick="entered('2')" class="num_pad two">
           <div class="Imedium">2</div>
         </button>
-        <button id="15" onclick="entered('3')" class="num_pad three shadow">
+        <button id="15" onclick="entered('3')" class="num_pad three">
           <div class="Imedium">3</div>
         </button>
-        <button id="16" class="num_pad plus shadow">
+        <button id="16" class="num_pad plus">
           <div class="Imedium red">
-            <img src="assets/icons/add-icon.svg" alt="" />+
+            <img src="assets/icons/add-icon.svg" alt="" />
           </div>
         </button>
-        <button id="17" onclick="entered('0')" class="num_pad zero shadow">
+        <button id="17" onclick="entered('0')" class="num_pad zero">
           <div class="Imedium">0</div>
         </button>
-        <button id="18" onclick="entered('.')" class="num_pad dot shadow">
+        <button id="18" onclick="entered('.')" class="num_pad dot">
           <div class="Imedium">.</div>
         </button>
-        <button id="19" class="num_pad equal shadow">
+        <button id="19" class="num_pad equal">
           <div class="Imedium">
-            <img src="assets/icons/equals-icon.svg" alt="" />=
+            <img src="assets/icons/equals-icon.svg" alt="" />
           </div>
         </button>
       </div>
