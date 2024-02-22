@@ -4,6 +4,11 @@ let togglelight = false;
 function entered(number) {
   let count = 0;
 
+  const current = (document.getElementById("screen").firstChild.nodeValue +=
+    number);
+
+  console.log(typeof current); //iterate through string to check for amount of decimals
+
   if (count > 1) {
     console.log("count =" + count);
     exit();
@@ -13,8 +18,6 @@ function entered(number) {
     count++;
     console.log("count =" + count);
   }
-
-  document.getElementById("screen").firstChild.nodeValue += number;
 }
 
 function toggleDark() {

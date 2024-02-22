@@ -33,6 +33,14 @@ main {
   border-radius: 15px;
 }
 
+input {
+  background-color: rgb(235, 235, 235);
+  border: none;
+  text-align: right;
+  outline: none;
+  /* width: 50px; */
+}
+
 button {
   border: none;
   box-shadow: 5px 10px 18px #bcbcbc;
@@ -57,7 +65,8 @@ button {
 
 .top_section {
   background-color: rgb(235, 235, 235);
-  border-radius: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .title {
