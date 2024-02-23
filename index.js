@@ -9,14 +9,15 @@ function entered(number) {
 
   console.log(typeof current); //iterate through string to check for amount of decimals
 
-  if (count > 1) {
-    console.log("count =" + count);
-    exit();
+  for (let i = 0; i < current.length; i++) {
+    if (current[i] == ".") {
+      count++;
+      console.log("count =" + count);
+    }
   }
 
-  if (number == ".") {
-    count++;
-    console.log("count =" + count);
+  if (count > 1) {
+    document.getElementById("screen").firstChild.nodeValue = "0";
   }
 }
 
