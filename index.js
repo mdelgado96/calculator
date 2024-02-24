@@ -7,12 +7,24 @@ function entered(number) {
   const current = (document.getElementById("screen").firstChild.nodeValue +=
     number);
 
-  console.log(typeof current); //iterate through string to check for amount of decimals
-
+  let newString = "";
   for (let i = 0; i < current.length; i++) {
     if (current[i] == ".") {
       count++;
-      console.log("count =" + count);
+    }
+
+    // if (current[i + 1] != ".") {
+    //   newString = current.slice(1);
+    // }
+
+    if (
+      current[i] == "+" ||
+      current[i] == "-" ||
+      current[i] == "*" ||
+      current[i] == "/" ||
+      current[i] == "%"
+    ) {
+      equals(current);
     }
   }
 
@@ -20,6 +32,8 @@ function entered(number) {
     document.getElementById("screen").firstChild.nodeValue = "0";
   }
 }
+
+function equals(number) {}
 
 function toggleDark() {
   togglelight = !togglelight;
