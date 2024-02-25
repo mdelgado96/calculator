@@ -7,7 +7,6 @@ function entered(number) {
   const current = (document.getElementById("screen").firstChild.nodeValue +=
     number);
 
-  let newString = "";
   for (let i = 0; i < current.length; i++) {
     if (current[i] == ".") {
       count++;
