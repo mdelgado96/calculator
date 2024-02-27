@@ -32,6 +32,10 @@ function entered(number) {
   }
 }
 
+function clearAll() {
+  document.getElementById("screen").firstChild.nodeValue = "0";
+}
+
 function equals(number) {}
 
 function toggleDark() {
