@@ -26,6 +26,7 @@
 
         <!-- screen where numbers appear -->
         <div class="num_screen">
+          <div id="last_num"></div>
           <div class="numbers">
             <span id="screen" class="number">0</span>
           </div>
@@ -98,7 +99,7 @@
         <button id="18" onclick="entered('.')" class="num_pad dot">
           <div class="Imedium">.</div>
         </button>
-        <button id="19" class="num_pad equal">
+        <button id="19" onclick="equals()" class="num_pad equal">
           <div class="Imedium">
             <img src="assets/icons/equals-icon.svg" alt="" />
           </div>
