@@ -24,6 +24,8 @@ function clearAll() {
 
 // function equals() {
 //   if (op)
+
+//   substring (document.getElementById("screen").firstChild.nodeValue) > convert to int and perform operation
 // }
 
 function toggleDark() {
