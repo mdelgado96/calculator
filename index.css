@@ -31,6 +31,7 @@ body {
 main {
   background-color: rgba(255, 255, 255, 0.889);
   border-radius: 15px;
+  width: 335px;
 }
 
 input {
@@ -38,7 +39,6 @@ input {
   border: none;
   text-align: right;
   outline: none;
-  /* width: 50px; */
 }
 
 button {

@@ -11,20 +11,6 @@ function entered(number) {
     if (current[i] == ".") {
       count++;
     }
-
-    // if (current[i + 1] != ".") {
-    //   newString = current.slice(1);
-    // }
-
-    if (
-      current[i] == "+" ||
-      current[i] == "-" ||
-      current[i] == "*" ||
-      current[i] == "/" ||
-      current[i] == "%"
-    ) {
-      equals(current);
-    }
   }
 
   if (count > 1) {
@@ -36,7 +22,9 @@ function clearAll() {
   document.getElementById("screen").firstChild.nodeValue = "0";
 }
 
-function equals(number) {}
+// function equals() {
+//   if (op)
+// }
 
 function toggleDark() {
   togglelight = !togglelight;
