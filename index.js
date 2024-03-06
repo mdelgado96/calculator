@@ -20,13 +20,25 @@ function entered(number) {
 
 function clearAll() {
   document.getElementById("screen").firstChild.nodeValue = "0";
+  document.getElementById("last_num").innerText = "";
 }
 
-// function equals() {
-//   if (op)
+function clear() {
+  console.log("click");
+  document.getElementById("screen").firstChild.nodeValue = "0";
+}
 
-//   substring (document.getElementById("screen").firstChild.nodeValue) > convert to int and perform operation
-// }
+function equals(op) {
+  const lastNum = parseFloat(
+    document.getElementById("screen").firstChild.nodeValue
+  );
+  document.getElementById("last_num").innerText = `${lastNum}`;
+
+  console.log(typeof lastNum);
+
+  if (op == "+") {
+  }
+}
 
 function toggleDark() {
   togglelight = !togglelight;
