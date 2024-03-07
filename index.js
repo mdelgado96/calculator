@@ -1,11 +1,16 @@
 let toggledark = false;
 let togglelight = false;
+let lastNum = "";
 
 function entered(number) {
   let count = 0;
 
   const current = (document.getElementById("screen").firstChild.nodeValue +=
     number);
+
+  if (current.length < 3 && current[0] == "0") {
+    document.getElementById("screen").firstChild.nodeValue -= "";
+  }
 
   for (let i = 0; i < current.length; i++) {
     if (current[i] == ".") {
@@ -28,15 +33,23 @@ function clear() {
   document.getElementById("screen").firstChild.nodeValue = "0";
 }
 
-function equals(op) {
-  const lastNum = parseFloat(
-    document.getElementById("screen").firstChild.nodeValue
-  );
-  document.getElementById("last_num").innerText = `${lastNum}`;
+function operator(op) {
+  document.getElementById("screen").firstChild.nodeValue += op;
 
-  console.log(typeof lastNum);
+  lastNum = document.getElementById("screen").firstChild.nodeValue;
+  document.getElementById("last_num").innerText += `${lastNum}`;
 
-  if (op == "+") {
+  document.getElementById("screen").firstChild.nodeValue = "0";
+}
+
+function equals() {
+  // lastNum += document.getElementById("screen").firstChild.nodeValue;
+
+  try {
+    document.getElementById("screen").firstChild.nodeValue = eval(lastNum);
+  } catch (error) {
+    document.getElementById("screen").firstChild.nodeValue = "error";
+    document.getElementById("last_num").innerText = "";
   }
 }
 
