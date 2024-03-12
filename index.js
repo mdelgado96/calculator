@@ -44,8 +44,8 @@ function clear() {
 function operator(op) {
   document.getElementById("screen").firstChild.nodeValue += op;
 
-  lastNum = document.getElementById("screen").firstChild.nodeValue;
-  document.getElementById("last_num").innerText += `${lastNum}`;
+  prevNum = document.getElementById("screen").firstChild.nodeValue;
+  lastNum = document.getElementById("last_num").innerText += `${prevNum}`;
 
   document.getElementById("screen").firstChild.nodeValue = "0";
 }
