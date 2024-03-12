@@ -28,14 +28,14 @@ function entered(number) {
   }
 }
 
-// clears everything on the screen and previous numger
+// clears everything on the screen and previous number
 function clearAll() {
   document.getElementById("screen").firstChild.nodeValue = "0";
   document.getElementById("last_num").innerText = "";
 }
 
 // only clears number currently on the screen
-function clear() {
+function clearCurrent() {
   console.log("click");
   document.getElementById("screen").firstChild.nodeValue = "0";
 }
