@@ -42,10 +42,10 @@ function clearCurrent() {
 
 // adds operators to previous number to get ready for operation
 function operator(op) {
-  document.getElementById("screen").firstChild.nodeValue += op;
+  document.getElementById("screen").firstChild.nodeValue += " " + op;
 
   prevNum = document.getElementById("screen").firstChild.nodeValue;
-  lastNum = document.getElementById("last_num").innerText += `${prevNum}`;
+  lastNum = document.getElementById("last_num").innerText += " " + `${prevNum}`;
 
   document.getElementById("screen").firstChild.nodeValue = "0";
 }
