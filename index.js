@@ -53,9 +53,14 @@ function operator(op) {
 // performs operation
 function equals() {
   lastNum += document.getElementById("screen").firstChild.nodeValue;
+  console.log(lastNum);
 
+  lastNum = lastNum.replace(/\s+/g, "");
+
+  console.log(lastNum);
   try {
-    document.getElementById("screen").firstChild.nodeValue = eval(lastNum);
+    console.log(lastNum);
+    document.getElementById("screen").firstChild.nodeValue = eval(`${lastNum}`);
   } catch (error) {
     document.getElementById("screen").firstChild.nodeValue = "error";
     document.getElementById("last_num").innerText = "";
