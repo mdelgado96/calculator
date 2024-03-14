@@ -22,7 +22,7 @@ function entered(number) {
     }
   }
 
-  // if extra decmila is added then resets number on screen
+  // if extra decimal is added then resets number on screen
   if (count > 1) {
     document.getElementById("screen").firstChild.nodeValue = "0";
   }
@@ -53,14 +53,11 @@ function operator(op) {
 // performs operation
 function equals() {
   lastNum += document.getElementById("screen").firstChild.nodeValue;
-  console.log(lastNum);
 
-  lastNum = lastNum.replace(/\s+/g, "");
+  lastNum = lastNum.replace("x", "*");
 
-  console.log(lastNum);
   try {
-    console.log(lastNum);
-    document.getElementById("screen").firstChild.nodeValue = eval(`${lastNum}`);
+    document.getElementById("screen").firstChild.nodeValue = eval(lastNum);
   } catch (error) {
     document.getElementById("screen").firstChild.nodeValue = "error";
     document.getElementById("last_num").innerText = "";
